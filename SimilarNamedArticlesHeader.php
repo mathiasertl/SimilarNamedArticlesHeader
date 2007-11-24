@@ -2,6 +2,14 @@
 
 $wgHooks['OutputPageBeforeHTML'][] = 'SimilarNamedArticlesHeader';
 
+$wgExtensionCredits['other'][] = array (
+	'name' => 'SimilarNamedArticlesHeader',
+	'description' => 'Displays articles with a similar name on top of each page',
+	'version' => '2.0-1.11.0',
+	'author' => 'Mathias Ertl',
+	'url' => 'http://pluto.htu.tuwien.ac.at/devel_wiki/index.php/SimilarNamedArticlesHeader',
+);
+
 function SimilarNamedArticlesHeader( $output_page, $qText)
 {
 	global $wgTitle, $wgRequest;
