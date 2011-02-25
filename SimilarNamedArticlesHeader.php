@@ -7,7 +7,7 @@ $wgExtensionCredits['other'][] = array (
 	'description' => 'Displays articles with a similar name on top of each page',
 	'version' => '2.0.1',
 	'author' => 'Mathias Ertl',
-	'url' => 'http://pluto.htu.tuwien.ac.at/devel_wiki/index.php/SimilarNamedArticlesHeader',
+	'url' => 'http://fs.fsinf.at/wiki/SimilarNamedArticlesHeader',
 );
 
 function SimilarNamedArticlesHeader( $output_page, $qText)
