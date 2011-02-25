@@ -39,7 +39,7 @@ function SimilarNamedArticlesHeader( $output_page, $qText)
 		return true;
 
 	global $wgParser;
-	global $wgSimilarNamedArticlesHeaderIncludeSubpages, $wgSimilarNamedArticlesHeaderNamespaces;
+	global $wgSimilarNamedArticlesHeaderIncludeSubpages;
 	global $wgSimilarNamedArticlesHeaderPREG;
 
 	$snaPage = new SimilarNamedArticles();
