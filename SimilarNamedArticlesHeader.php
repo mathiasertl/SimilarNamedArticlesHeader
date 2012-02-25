@@ -14,16 +14,18 @@ function SimilarNamedArticlesHeader( $output_page, $qText)
 {
 	global $wgTitle, $wgRequest;
 	global $wgSimilarNamedArticlesHeaderEnable;
-	if ( ! $wgSimilarNamedArticlesHeaderEnable )
+	if (!$wgSimilarNamedArticlesHeaderEnable) {
 		return true;
+	}
 	
 	global $wgSimilarNamedArticlesHeaderOnNamespaces;
 	global $wgSimilarNamedArticlesHeaderOnSubpages;
 
 	if ( is_array( $wgSimilarNamedArticlesHeaderOnNamespaces ) ) {
 		$tmpArray = array_keys( $wgSimilarNamedArticlesHeaderOnNamespaces, true);
-		if ( ! in_array( $wgTitle->getNamespace(), $tmpArray ) )
+		if (!in_array($wgTitle->getNamespace(), $tmpArray)) {
 			return true;
+		}
 	}
 	if ( ! $wgSimilarNamedArticlesHeaderOnSubpages && $wgTitle->isSubpage() ) {
 		$baseTitle = Title::newFromText(
