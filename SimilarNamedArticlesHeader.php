@@ -3,7 +3,7 @@
 $wgHooks['OutputPageBeforeHTML'][] = 'fnSimilarNamedArticlesHeader';
 
 $wgExtensionCredits['other'][] = array (
-    'path' => __file__
+    'path' => __file__,
     'name' => 'SimilarNamedArticlesHeader',
     'description' => 'Displays articles with a similar name on top of each page',
     'version' => '2.0.1',
