@@ -63,7 +63,7 @@ function fnSimilarNamedArticlesHeader($output_page, $qText)
 
     if ($output != '') {
         $parserOutput = $wgParser->parse("$output\n", $wgTitle, $output_page->parserOptions(),
-            true, true, $output_page->mRevisionId);
+            true, true, $output_page->getRevisionId());
         $output_page->addParserOutputNoText($parserOutput);
 
         # you could invert this to append the text instead of prepending it.
