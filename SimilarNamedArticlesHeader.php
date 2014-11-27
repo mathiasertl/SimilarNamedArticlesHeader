@@ -6,7 +6,7 @@ $wgExtensionCredits['other'][] = array (
     'path' => __file__,
     'name' => 'SimilarNamedArticlesHeader',
     'description' => 'Displays articles with a similar name on top of each page',
-    'version' => '2.0.2',
+    'version' => '2.0.3',
     'author' => 'Mathias Ertl',
     'url' => 'http://fs.fsinf.at/wiki/SimilarNamedArticlesHeader',
 );
