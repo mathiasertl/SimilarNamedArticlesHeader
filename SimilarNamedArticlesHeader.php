@@ -11,7 +11,7 @@ $wgExtensionCredits['other'][] = array (
     'url' => 'http://fs.fsinf.at/wiki/SimilarNamedArticlesHeader',
 );
 
-function fnSimilarNamedArticlesHeader($output_page, $qText)
+function fnSimilarNamedArticlesHeader(&$output_page, &$qText)
 {
     global $wgTitle, $wgRequest;
     global $wgSimilarNamedArticlesHeaderEnable;
